@@ -1,0 +1,32 @@
+/* Base Styles */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* This defines what 1rem is | 1 rem = 10px; 10px/16px = 62.5% */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 2rem;
+  box-sizing: border-box;
+  color: #000;
+  margin: 0;
+  font-family: "Titillium Web", sans-serif;
+  line-height: 1.5;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
