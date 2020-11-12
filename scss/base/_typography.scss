@@ -15,7 +15,6 @@ html {
 
 body {
     font-family: $font-primary-stack;
-    font-size: 2rem;
     color: $color-black;
     padding: 0;
     line-height: 1.3;
@@ -26,6 +25,14 @@ li {
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: $font-bold;
 }
 
 h2,
