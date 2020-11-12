@@ -44,3 +44,10 @@ a {
     text-decoration: none;
     color: $color-bg-dark;
 }
+
+button {
+    background-color: transparent;
+    border: none;
+    font-weight: $font-bold;
+    padding: .2rem .4rem;
+}

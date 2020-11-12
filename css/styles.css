@@ -15,8 +15,24 @@
 .header__wrapper__title {
   margin-right: 1rem;
 }
-.header__search__input {
-  min-width: 22rem;
+.header__search__label {
+  display: none;
+}
+.header__search__wrapper {
+  position: relative;
+}
+.header__search__wrapper__input {
+  min-width: 30rem;
+  padding: 0.7rem;
+}
+.header__search__wrapper__button {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  background-color: #FFFFFF;
+  border: 1px solid #5E5E5E;
+  border-radius: 5px;
 }
 .header__nav__list {
   display: flex;
@@ -426,6 +442,13 @@ p {
 a {
   text-decoration: none;
   color: #333333;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-weight: 700;
+  padding: 0.2rem 0.4rem;
 }
 
 .main {

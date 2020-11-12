@@ -3,32 +3,52 @@
 .header {
     padding: 2rem 0;
     @include flex-standard;
-    
+
     &__wrapper {
         @include flex-standard;
-        
+
         &__title {
             margin-right: 1rem;
         }
     }
-    
+
     &__search {
-        
-        &__input {
-            min-width: 22rem;
+
+        &__label {
+            display: none;
         }
-        
+
+        &__wrapper {
+            position: relative;
+
+            &__input {
+                min-width: 30rem;
+                padding: .7rem;
+            }
+
+            &__button {
+                position: absolute;
+                top: 50%;
+                left: 90%;
+                transform: translate(-50%, -50%);
+                background-color: $color-white;
+                border: 1px solid #5E5E5E;
+                border-radius: 5px;
+            }
+
+        }
+
     }
-    
+
     &__nav__list {
         @include flex-standard;
-        
+
         &__item {
-            
+
             &__link {
                 position: relative;
                 padding-bottom: .5rem;
-                
+
                 &::after {
                     content: '';
                     position: absolute;
@@ -39,18 +59,18 @@
                     background-color: $color-bg-secondary-dark;
                     transition: width .3s ease;
                 }
-                
+
                 &:hover::after {
                     width: 100%;
                 }
-                
+
             }
-            
+
         }
-        
+
         &__item+&__item {
             padding-left: 1rem;
         }
     }
-    
+
 }
