@@ -15,15 +15,24 @@
 .header__wrapper__title {
   margin-right: 1rem;
 }
+.header__search {
+  position: relative;
+}
 .header__search__label {
   display: none;
 }
 .header__search__wrapper {
   position: relative;
 }
+.header__search__wrapper__icon {
+  position: absolute;
+  top: -20%;
+  left: 78%;
+  transform: translate(-50%, 50%);
+}
 .header__search__wrapper__input {
   min-width: 30rem;
-  padding: 0.7rem;
+  padding: 0.5rem;
 }
 .header__search__wrapper__button {
   position: absolute;
@@ -31,8 +40,8 @@
   left: 90%;
   transform: translate(-50%, -50%);
   background-color: #FFFFFF;
-  border: 1px solid #5E5E5E;
-  border-radius: 5px;
+  border: 1px solid #000000;
+  border-radius: 4px;
 }
 .header__nav__list {
   display: flex;
@@ -449,7 +458,7 @@ button {
   border: none;
   font-weight: 700;
   font-size: 0.9rem;
-  padding: 0.2rem 0.4rem;
+  padding: 0.2rem 0.8rem;
 }
 
 .main {
