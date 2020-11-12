@@ -1,0 +1,9 @@
+/* ============================================= */
+/*              MIXINS                           */
+/* ============================================= */
+
+@mixin flex-standard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
