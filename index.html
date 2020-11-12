@@ -10,18 +10,28 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css" />
   <title>Grailed Clone</title>
 </head>
-<main class="main">
-    <header class="header">
-      <h1 class="header__title">Grailed</h1>
-      <div class="header__search">
-        <label class="header__search__label">Search</label>
-        <input class="header__search__icon" type="search" id="site-search" name="q" aria-label="Search through site content"> 
-        <button class="header__search__button">Search</button>
-      </div>
-    </header>
-</main>
-
 <body>
+  <main class="main">
+    <header class="header">
+      <div class="header__wrapper">
+        <h1 class="header__wrapper__title">Grailed</h1>
+        <div class="header__search">
+          <label class="header__search__label">Search</label>
+          <input class="header__search__input" type="search" id="site-search" name="q" aria-label="Search through site content"> 
+          <button class="header__search__button">Search</button>
+        </div>
+      </div>
+      <nav class="header__nav" role="navigation">
+        <ul class="header__nav__list">
+          <li class="header__nav__list__item"><a href="#Shop">Shop</a></li>
+          <li class="header__nav__list__item"><a href="#Sell">Sell</a></li>
+          <li class="header__nav__list__item"><a href="#Read">Read</a></li>
+          <li class="header__nav__list__item"><button>Login</button></li>
+          <li class="header__nav__list__item"><button>Sign Up</button></li>
+        </ul>
+      </nav>
+    </header>
+  </main>
   
 </body>
 

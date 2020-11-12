@@ -3,4 +3,29 @@
 .header {
     padding: 2rem 0;
     @include flex-standard;
+
+    &__wrapper {
+        @include flex-standard;
+
+        &__title {
+            margin-right: 1rem;
+        }
+    }
+
+    &__search {
+
+        &__input {
+            min-width: 22rem;
+        }
+
+    }
+
+    &__nav__list {
+        @include flex-standard;
+
+        &__item + &__item {
+            padding-left: 1rem;
+        }
+    }
+
 }

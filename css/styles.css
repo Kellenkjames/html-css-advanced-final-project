@@ -7,6 +7,25 @@
   align-items: center;
   justify-content: space-between;
 }
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__wrapper__title {
+  margin-right: 1rem;
+}
+.header__search__input {
+  min-width: 22rem;
+}
+.header__nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__nav__list__item + .header__nav__list__item {
+  padding-left: 1rem;
+}
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -388,7 +407,7 @@ p {
 }
 
 .main {
-  max-width: 60rem;
+  max-width: 70rem;
   margin: 0 auto;
 }
 
