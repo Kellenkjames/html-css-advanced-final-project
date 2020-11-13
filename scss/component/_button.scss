@@ -1,6 +1,25 @@
 // BUTTON
 
 .btn.small {
-    padding: .2rem .4rem;
+    padding: .3rem .6rem;
     border: 1px solid $color-black;
+    transition: background-color .3s ease;
+}
+
+.btn.small::after {
+    display: none;
+}
+
+
+.btn.small.login:hover {
+    background-color: $color-btn-login;
+}
+
+.btn.small.signup {
+    background-color: $color-black;
+    color: $color-white;
+}
+
+.btn.small.signup:hover {
+    background-color: $color-btn-signup;
 }
