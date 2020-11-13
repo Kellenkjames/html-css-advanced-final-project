@@ -65,8 +65,19 @@
 .header__nav__list__item__link:hover::after {
   width: 100%;
 }
+.header__nav__list__item__link--button {
+  padding: 0.2rem 0.8rem;
+}
+.header__nav__list__item__link--button--secondary {
+  border: 1px solid #000000;
+}
 .header__nav__list__item + .header__nav__list__item {
   padding-left: 1rem;
+}
+
+.btn.small {
+  padding: 0.2rem 0.4rem;
+  border: 1px solid #000000;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

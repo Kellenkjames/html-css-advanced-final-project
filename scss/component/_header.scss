@@ -72,6 +72,14 @@
                     width: 100%;
                 }
 
+                &--button {
+                    padding: .2rem .8rem;
+                }
+                
+                &--button--secondary {
+                    border: 1px solid $color-black;
+                }
+
             }
 
         }
