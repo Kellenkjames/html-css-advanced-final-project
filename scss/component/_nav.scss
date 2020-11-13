@@ -2,21 +2,70 @@
 
 .nav {
     @include flex-standard;
-    
+
     &__list {
-        @include flex-standard;
-        
-        &__link {
-            &__item:hover {
-                color: $color-links;
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-size: 0.889rem;
+
+        &__level {
+                            
+            &__one {
+                width: 100%;
             }
+
+            &:hover>&__two,
+            &:focus>&__two {
+                opacity: 1;
+                transform: translateY(0);
+                visibility: visible;
+                pointer-events: auto;
+            }
+
+            // Dropdown
+            &__two {
+                padding: .5rem 0;
+                max-width: 18rem;
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                opacity: 0;
+                visibility: hidden;
+                width: 100%;
+                top: 100%;
+                left: 0;
+                background-color: $color-bg-primary;
+                transition: .4s ease;
+                box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+
+                &__list {
+                    flex: 1 1 auto;
+                    width: 100%;
+                    overflow: auto;
+
+                    &__item {
+                        width: 100%;
+
+                        &__link {
+                            display: block;
+                            color: $color-black;
+                            line-height: 1.333;
+                            flex: 1 1 auto;
+                            padding: .5rem 1rem;
+                            font-weight: $font-bold;
+                            transition: background-color .3s ease, color .3s ease;
+                        }
+                    }
+                }
+            }
+
         }
-        
-        &__link+&__link {
+
+        &__level+&__level {
             margin-left: 3.3rem;
         }
-        
+
     }
-    
-    
+
 }

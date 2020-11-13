@@ -21,63 +21,76 @@
             <svg class="header__search__wrapper__icon" fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px">
               <path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="2" d="M13 4A9 9 0 1 0 13 22A9 9 0 1 0 13 4Z" />
               <path fill="none" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M26 26L19.437 19.437" /></svg>
-            <input class="header__search__wrapper__input" type="search" id="site-search" name="q" aria-label="Search through site content">
-            <button class="header__search__wrapper__button">Search</button>
+              <input class="header__search__wrapper__input" type="search" id="site-search" name="q" aria-label="Search through site content">
+              <button class="header__search__wrapper__button">Search</button>
+            </div>
           </div>
         </div>
-      </div>
-      <nav class="header__nav" role="navigation">
-        <ul class="header__nav__list">
-          <li class="header__nav__list__item">
-            <a class="header__nav__list__item__link" href="#Shop">Shop</a>
-          </li>
-          <li class="header__nav__list__item">
-            <a class="header__nav__list__item__link" href="#Sell">Sell</a>
-          </li>
-          <li class="header__nav__list__item">
-            <a class="header__nav__list__item__link" href="#Read">Read</a>
-          </li>
-          <li class="header__nav__list__item">
-            <a class="header__nav__list__item__link btn small login" href="#Login">Login</a>
-          <li class="header__nav__list__item">
-            <a class="header__nav__list__item__link btn small signup" href="#SignUp">Sign Up</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <nav class="nav" role="navigation">
-      <ul class="nav__list">
-        <li class="nav__list__link">
-          <a href="#" class="nav__list__link__item">Designers</a>
-        </li>
-        <li class="nav__list__link">
-          <a href="#" class="nav__list__link__item">Browse By Cateogry</a>
-        </li>
-        <li class="nav__list__link">
-          <a href="#" class="nav__list__link__item">Sneakers</a>
-        </li>
-        <li class="nav__list__link">
-          <a href="#" class="nav__list__link__item">Footwear</a>
-        </li>
-        <li class="nav__list__link">
-          <a href="#" class="nav__list__link__item">Tops</a>
-        </li>
-        <li class="nav__list__link">
-          <a href="#" class="nav__list__link__item">Outwear</a>
-        </li>
-        <li class="nav__list__link">
-          <a href="#" class="nav__list__link__item">Staff Picks</a>
-        </li>
-        <li class="nav__list__link">
-          <a href="#" class="nav__list__link__item">Collections</a>
-        </li>
-        <li class="nav__list__link">
-          <a href="#" class="nav__list__link__item">Womenswear</a>
-        </li>
-      </ul>
-    </nav>
-  </main>
-  
-</body>
-
-</html>
+        <nav class="header__nav" role="navigation">
+          <ul class="header__nav__list">
+            <li class="header__nav__list__item">
+              <a class="header__nav__list__item__link" href="#Shop">Shop</a>
+            </li>
+            <li class="header__nav__list__item">
+              <a class="header__nav__list__item__link" href="#Sell">Sell</a>
+            </li>
+            <li class="header__nav__list__item">
+              <a class="header__nav__list__item__link" href="#Read">Read</a>
+            </li>
+            <li class="header__nav__list__item">
+              <a class="header__nav__list__item__link btn small login" href="#Login">Login</a>
+              <li class="header__nav__list__item">
+                <a class="header__nav__list__item__link btn small signup" href="#SignUp">Sign Up</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <nav class="nav" role="navigation">
+          <ul class="nav__list" role="menu" aria-label="Top Navigation" aria-labelledby="MenuToggle">
+            <li class="nav__list__level">
+              <span class="nav__list__level__one">
+                <a href="#Designers" class="nav__list__level__one__item">Designers</a>
+              </span>
+              <div class="nav__list__level__two">
+                 <ul class="nav__list__level__two__list" role="menu">
+                    <li class="nav__list__level__two__list__item" role="menuitem">
+                      <a class="nav__list__level__two__list__item__link" href="#" target="">Gucci</a>
+                    </li>
+                    <li class="nav__list__level__two__list__item" role="menuitem">
+                      <a class="nav__list__level__two__list__item__link" href="#" target="">Gucci</a>
+                    </li>
+                 </ul> 
+              </div>  
+            </li>
+            <li class="nav__list__level">
+              <a href="#" class="nav__list__link__item">Browse By Cateogry</a>
+            </li>
+            <li class="nav__list__level">
+              <a href="#" class="nav__list__link__item">Sneakers</a>
+            </li>
+            <li class="nav__list__level">
+              <a href="#" class="nav__list__link__item">Footwear</a>
+            </li>
+            <li class="nav__list__level">
+              <a href="#" class="nav__list__link__item">Tops</a>
+            </li>
+            <li class="nav__list__level">
+              <a href="#" class="nav__list__link__item">Outwear</a>
+            </li>
+            <li class="nav__list__level">
+              <a href="#" class="nav__list__link__item">Staff Picks</a>
+            </li>
+            <li class="nav__list__level">
+              <a href="#" class="nav__list__link__item">Collections</a>
+            </li>
+            <li class="nav__list__level">
+              <a href="#" class="nav__list__link__item">Womenswear</a>
+            </li>
+          </ul>
+        </nav>
+      </main>
+      
+      <script src="js/app.js"></script>
+    </body>
+    
+    </html>
