@@ -43,6 +43,7 @@ p {
 a {
     text-decoration: none;
     color: $color-bg-dark;
+    transition: color .3s ease;
 }
 
 button {

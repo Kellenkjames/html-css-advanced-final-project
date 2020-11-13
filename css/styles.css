@@ -90,6 +90,9 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.nav__list__link__item:hover {
+  color: #1919FF;
+}
 .nav__list__link + .nav__list__link {
   margin-left: 3.3rem;
 }
@@ -499,6 +502,7 @@ p {
 a {
   text-decoration: none;
   color: #333333;
+  transition: color 0.3s ease;
 }
 
 button {

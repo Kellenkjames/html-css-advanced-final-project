@@ -2,15 +2,21 @@
 
 .nav {
     @include flex-standard;
-
+    
     &__list {
         @include flex-standard;
-
-        &__link + &__link {
+        
+        &__link {
+            &__item:hover {
+                color: $color-links;
+            }
+        }
+        
+        &__link+&__link {
             margin-left: 3.3rem;
         }
-
+        
     }
-
-
+    
+    
 }
