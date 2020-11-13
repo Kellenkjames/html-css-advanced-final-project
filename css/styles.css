@@ -6,11 +6,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .header__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .header__wrapper__title {
   margin-right: 1rem;
@@ -47,6 +49,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .header__nav__list__item__link {
   position: relative;
@@ -73,6 +76,22 @@
 }
 .header__nav__list__item + .header__nav__list__item {
   margin-left: 1rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.nav__list__link + .nav__list__link {
+  margin-left: 3.3rem;
 }
 
 .btn.small {
