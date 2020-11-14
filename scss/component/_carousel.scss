@@ -1,0 +1,21 @@
+// Carousel - Overrise Bootstrap Styles 
+
+.carousel {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    z-index: -2;
+}
+
+.carousel .carousel-item {
+
+    filter: brightness(0.5);
+}
+
+.carousel .carousel-indicators {
+    top: 90%;
+}
+
+.carousel .carousel-caption h5,
+.carousel .carousel-caption p {
+    color: $color-white;
+}

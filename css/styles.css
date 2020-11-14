@@ -270,6 +270,26 @@
   background-color: #00b100;
 }
 
+.carousel {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  z-index: -2;
+}
+
+.carousel .carousel-item {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+}
+
+.carousel .carousel-indicators {
+  top: 90%;
+}
+
+.carousel .carousel-caption h5,
+.carousel .carousel-caption p {
+  color: #FFFFFF;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -669,7 +689,7 @@ button {
   padding: .2rem .8rem;
 }
 
-.main {
+.wrapper {
   max-width: 70rem;
   margin: 0 auto;
 }
