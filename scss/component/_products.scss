@@ -1,0 +1,32 @@
+// PRODUCTS 
+
+.products {
+    @include flex-standard;
+    padding-bottom: 2rem;
+
+    &__list {
+        width: 18%;
+
+        &__link {
+
+    
+            &__desc {
+                display: block;
+                margin-top: 1rem;
+                background-color: $color-black;
+                color: $color-white;
+                padding: .5rem 2rem;
+                transition: background-color .3s ease, color .3s ease;
+
+                &:hover {
+                    background-color: $color-links;
+                    color: $color-white;
+                }
+            }
+
+            &__remove {
+                color: $color-remove-btn;
+            }
+        }
+    }
+}

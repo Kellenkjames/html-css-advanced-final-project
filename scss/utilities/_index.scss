@@ -1,3 +1,7 @@
 // BASE IMPORTS --------------------------------- /
 @import 'mixins', 
         'variables';
+
+.hidden {
+  display: none;
+}

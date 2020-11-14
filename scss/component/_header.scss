@@ -52,6 +52,7 @@
         @include flex-standard;
 
         &__item {
+            position: relative;
 
             &__link {
                 position: relative;
@@ -79,9 +80,22 @@
                 &--button {
                     padding: .2rem .8rem;
                 }
-                
+
                 &--button--secondary {
                     border: 1px solid $color-black;
+                }
+
+                &__notification {
+                    position: absolute;
+                    top: -50%;
+                    left: 100%;
+                    transform: translate(-50%,-50%);
+                    border: 1px solid $color-bg-dark;
+                    height: 1.5rem;
+                    width: 1.5rem;
+                    border-radius: 50%;
+                    display: block;
+                    text-align: center;
                 }
 
             }
