@@ -270,6 +270,29 @@
   background-color: #00b100;
 }
 
+.trends {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.trends__list {
+  width: 32%;
+}
+
+.trends__list__link__desc {
+  display: block;
+  margin-top: 1rem;
+}
+
 .carousel.wrapper {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -690,6 +713,10 @@ a {
   color: #333333;
   -webkit-transition: color .3s ease;
   transition: color .3s ease;
+}
+
+a:hover {
+  text-decoration: none !important;
 }
 
 button {
