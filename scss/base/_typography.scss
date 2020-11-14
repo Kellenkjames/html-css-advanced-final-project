@@ -40,6 +40,17 @@ p {
     margin: 0;
 }
 
+h4 {
+    font-weight: $font-bold;
+    font-size: 1.2rem;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
 a {
     text-decoration: none;
     color: $color-bg-dark;
