@@ -1,6 +1,6 @@
 footer {
   display:flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: 5rem;
   padding-bottom: 5rem;
   border-top: 1px solid lightgrey;
@@ -9,11 +9,11 @@ footer {
 .footer_item {
   display: flex;
   flex-direction: column;
-  padding-left: 1rem;
+  
 }
 
 a:hover {
-  color:$color-links;
+  color:red;
 }
 
 .icon {

@@ -232,7 +232,7 @@
     </div>
     
     <main class="wrapper">
-        <section class="section carousel wrapper">
+        <section class="section carousel wrapper>
           <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -274,7 +274,7 @@
         </section>
 
         <!-- Latest Trends-->
-        <section class="section">
+        <section class="section lax lax_preset_slideX-242.25-500">
           <header class="header">
               <h4>Shop Latest Trends</h4>
           </header>
@@ -542,6 +542,32 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     
+    <!-- LAX JS -->
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+
+    <!-- JS -->
+    <!-- <script>
+      window.onload = function () {
+        lax.init()
+
+        // Add a driver that we use to control our animations
+        lax.addDriver('scrollY', function () {
+          return document.body.scrollTop
+        })
+
+        // Add animation bindings to elements
+        lax.addElements('.section', {
+          scrollY: {
+            translateX: [
+              ["elInY", "elCenterY", "elOutY"],
+              [0, 'screenWidth/2', 'screenWidth'],
+            ]
+          }
+        }
+      })
+    </script> -->
+
+    <!-- Custom JS-->
     <script src="js/app.js"></script>
   </body>
   
