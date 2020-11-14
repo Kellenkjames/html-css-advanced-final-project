@@ -18,3 +18,7 @@
 .carousel.wrapper .carousel-caption p {
   color: $color-white;
 }
+
+.carousel-inner {
+  z-index: -1;
+}
