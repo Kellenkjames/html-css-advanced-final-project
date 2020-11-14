@@ -293,6 +293,29 @@
   margin-top: 1rem;
 }
 
+.categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.categories__list {
+  width: 18%;
+}
+
+.categories__list__link__desc {
+  display: block;
+  margin-top: 1rem;
+}
+
 .carousel.wrapper {
   padding-top: 2rem;
   padding-bottom: 2rem;

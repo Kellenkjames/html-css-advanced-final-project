@@ -1,0 +1,21 @@
+// CATEGORIES
+
+.categories {
+    @include flex-standard;
+
+    &__list {
+        width: 18%;
+
+        &__link {
+
+            &__img {
+                
+            }
+
+            &__desc {
+                display: block;
+                margin-top: 1rem;
+            }
+        }
+    }
+}
