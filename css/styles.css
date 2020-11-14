@@ -334,9 +334,9 @@
 .designers__list {
   position: relative;
   padding: 3rem;
-  border: 2px dotted #333333;
   border-radius: 50%;
   cursor: pointer;
+  border: 2px dashed #000000;
 }
 
 .designers__list:hover > a {

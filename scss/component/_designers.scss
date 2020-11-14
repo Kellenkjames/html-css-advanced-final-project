@@ -6,9 +6,11 @@
     &__list {
         position: relative;
         padding: 3rem;
-        border: 2px dotted $color-bg-dark;
         border-radius: 50%;
         cursor: pointer;
+        border: 2px dashed $color-black;
+
+        
 
         &:hover > a {
             color: $color-links;
@@ -17,4 +19,3 @@
     }
 }
 
-// Animations
