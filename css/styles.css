@@ -316,6 +316,33 @@
   margin-top: 1rem;
 }
 
+.designers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.designers__list {
+  position: relative;
+  padding: 3rem;
+  border: 2px dotted #333333;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.designers__list:hover > a {
+  color: #1919FF;
+}
+
 .carousel.wrapper {
   padding-top: 2rem;
   padding-bottom: 2rem;
