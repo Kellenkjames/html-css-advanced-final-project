@@ -1,110 +1,105 @@
-// HEADER 
+// HEADER
 
 .header {
-    padding: 2rem 0;
+  padding: 2rem 0;
+  @include flex-standard;
+
+  &__wrapper {
     @include flex-standard;
 
+    &__title {
+      margin-right: 1rem;
+    }
+  }
+
+  &__search {
+    position: relative; 
+
+    &__label {
+      display: none;
+    }
+
     &__wrapper {
-        @include flex-standard;
+      position: relative;
 
-        &__title {
-            margin-right: 1rem;
-        }
+      &__icon {
+        position: absolute;
+        top: -20%;
+        left: 78%;
+        transform: translate(-50%, 50%);
+      }
+
+      &__input {
+        min-width: 30rem;
+        padding: 0.5rem;
+      }
+
+      &__button {
+        position: absolute;
+        top: 50%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+        background-color: $color-white;
+        border: 1px solid $color-black;
+        border-radius: 4px;
+      }
     }
+  }
 
-    &__search {
+  &__nav__list {
+    @include flex-standard;
+
+    &__item {
+      position: relative;
+
+      &__link {
         position: relative;
+        padding-bottom: 0.5rem;
 
-        &__label {
-            display: none;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background-color: $color-bg-secondary-dark;
+          transition: width 0.3s ease;
         }
 
-        &__wrapper {
-            position: relative;
-
-            &__icon {
-                position: absolute;
-                top: -20%;
-                left: 78%;
-                transform: translate(-50%, 50%);
-            }
-
-            &__input {
-                min-width: 30rem;
-                padding: .5rem;
-            }
-
-            &__button {
-                position: absolute;
-                top: 50%;
-                left: 90%;
-                transform: translate(-50%, -50%);
-                background-color: $color-white;
-                border: 1px solid $color-black;
-                border-radius: 4px;
-            }
-
+        &:hover {
+          color: $color-black; 
         }
 
+        &:hover::after {
+          width: 100%;
+        }
+
+        &--button {
+          padding: 0.2rem 0.8rem;
+        }
+
+        &--button--secondary {
+          border: 1px solid $color-black;
+        }
+
+        &__notification {
+          position: absolute;
+          top: -50%;
+          left: 100%;
+          transform: translate(-50%, -50%);
+          border: 1px solid $color-bg-dark;
+          height: 1.5rem;
+          width: 1.5rem;
+          border-radius: 50%;
+          display: block;
+          text-align: center;
+        }
+      }
     }
 
-    &__nav__list {
-        @include flex-standard;
-
-        &__item {
-            position: relative;
-
-            &__link {
-                position: relative;
-                padding-bottom: .5rem;
-
-                &::after {
-                    content: '';
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    width: 0;
-                    height: 2px;
-                    background-color: $color-bg-secondary-dark;
-                    transition: width .3s ease;
-                }
-
-                &:hover {
-                    color: $color-black;
-                }
-
-                &:hover::after {
-                    width: 100%;
-                }
-
-                &--button {
-                    padding: .2rem .8rem;
-                }
-
-                &--button--secondary {
-                    border: 1px solid $color-black;
-                }
-
-                &__notification {
-                    position: absolute;
-                    top: -50%;
-                    left: 100%;
-                    transform: translate(-50%,-50%);
-                    border: 1px solid $color-bg-dark;
-                    height: 1.5rem;
-                    width: 1.5rem;
-                    border-radius: 50%;
-                    display: block;
-                    text-align: center;
-                }
-
-            }
-
-        }
-
-        &__item+&__item {
-            margin-left: 1rem;
-        }
+    &__item + &__item {
+      margin-left: 1rem;
     }
-
+  }
 }

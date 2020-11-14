@@ -1,10 +1,6 @@
 /* ============================================= */
 /*              MIXINS                           */
 /* ============================================= */
-.hidden {
-  display: none;
-}
-
 .header {
   padding: 2rem 0;
   display: -webkit-box;
@@ -60,7 +56,7 @@
 
 .header__search__wrapper__input {
   min-width: 30rem;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .header__search__wrapper__button {
@@ -94,19 +90,19 @@
 
 .header__nav__list__item__link {
   position: relative;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
 .header__nav__list__item__link::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0;
   height: 2px;
   background-color: #5E5E5E;
-  -webkit-transition: width .3s ease;
-  transition: width .3s ease;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
 }
 
 .header__nav__list__item__link:hover {
@@ -118,7 +114,7 @@
 }
 
 .header__nav__list__item__link--button {
-  padding: .2rem .8rem;
+  padding: 0.2rem 0.8rem;
 }
 
 .header__nav__list__item__link--button--secondary {
@@ -143,18 +139,18 @@
   margin-left: 1rem;
 }
 
-footer {
+.footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  border-top: 1rem solid lightgrey;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  border-top: 1px solid lightgrey;
 }
 
-.footer_item {
+.footer__section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,14 +158,13 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 1rem;
 }
 
-a:hover {
+.footer__section__list__item:hover {
   color: #1919FF;
 }
 
-.icon {
+.footer__section__list__icon {
   max-height: 2rem;
   width: auto;
 }
@@ -449,13 +444,12 @@ a:hover {
 }
 
 .products__list__link__desc {
-  display: block;
   margin-top: 1rem;
   background-color: #000000;
   color: #FFFFFF;
-  padding: .5rem 2rem;
-  -webkit-transition: background-color .3s ease, color .3s ease;
-  transition: background-color .3s ease, color .3s ease;
+  padding: 0.5rem 2rem;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .products__list__link__desc:hover {
@@ -465,6 +459,8 @@ a:hover {
 
 .products__list__link__remove {
   color: #CD5C5C;
+  margin-top: 1rem;
+  padding: 0.5rem 2rem;
 }
 
 .featured {
@@ -884,7 +880,7 @@ li {
 
 h1 {
   text-transform: uppercase;
-  letter-spacing: .3rem;
+  letter-spacing: 0.3rem;
   margin: 0;
   font-size: 1.5rem;
   font-weight: 700;
@@ -909,8 +905,8 @@ img {
 a {
   text-decoration: none;
   color: #333333;
-  -webkit-transition: color .3s ease;
-  transition: color .3s ease;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 a:hover {
@@ -921,8 +917,12 @@ button {
   background-color: transparent;
   border: none;
   font-weight: 700;
-  font-size: .9rem;
-  padding: .2rem .8rem;
+  font-size: 0.9rem;
+  padding: 0.2rem 0.8rem;
+}
+
+.hidden {
+  display: none !important;
 }
 
 .wrapper {
