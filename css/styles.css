@@ -118,6 +118,7 @@
 }
 
 .nav {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,6 +132,28 @@
       flex-wrap: wrap;
 }
 
+.nav::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -30%;
+  height: 1px;
+  width: calc(100% + 40rem);
+  background-color: #000000;
+  z-index: -1;
+}
+
+.nav::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -30%;
+  height: 1px;
+  width: calc(100% + 40rem);
+  background-color: #000000;
+  z-index: -1;
+}
+
 .nav__list {
   position: relative;
   display: -webkit-box;
@@ -140,6 +163,7 @@
       -ms-flex-align: center;
           align-items: center;
   font-size: 0.889rem;
+  padding: 1rem 0;
 }
 
 .nav__list__level {

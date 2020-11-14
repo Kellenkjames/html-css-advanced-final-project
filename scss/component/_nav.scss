@@ -1,13 +1,37 @@
 // NAV
 
 .nav {
+    position: relative;
     @include flex-standard;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -30%;
+        height: 1px;
+        width: calc(100% + 40rem);
+        background-color: $color-black;
+        z-index: -1;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: -30%;
+        height: 1px;
+        width: calc(100% + 40rem);
+        background-color: $color-black;
+        z-index: -1;
+    }
 
     &__list {
         position: relative;
         display: flex;
         align-items: center;
         font-size: 0.889rem;
+        padding: 1rem 0;
 
         &__level {
             position: relative;
