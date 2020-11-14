@@ -101,6 +101,10 @@
   transition: width .3s ease;
 }
 
+.header__nav__list__item__link:hover {
+  color: #000000;
+}
+
 .header__nav__list__item__link:hover::after {
   width: 100%;
 }
@@ -328,19 +332,47 @@
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 2rem;
 }
 
 .designers__list {
   position: relative;
-  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 7rem;
+  min-width: 7rem;
   border-radius: 50%;
   cursor: pointer;
-  border: 2px dashed #000000;
+  border: 1px dashed #000000;
+  -webkit-transition: letter-spacing .3s ease, -webkit-transform .3s ease;
+  transition: letter-spacing .3s ease, -webkit-transform .3s ease;
+  transition: transform .3s ease, letter-spacing .3s ease;
+  transition: transform .3s ease, letter-spacing .3s ease, -webkit-transform .3s ease;
+}
+
+.designers__list:hover {
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+  letter-spacing: .1rem;
 }
 
 .designers__list:hover > a {
   color: #1919FF;
+}
+
+.designers__list__desc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .carousel.wrapper {

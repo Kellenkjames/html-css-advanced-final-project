@@ -68,6 +68,10 @@
                     transition: width .3s ease;
                 }
 
+                &:hover {
+                    color: $color-black;
+                }
+
                 &:hover::after {
                     width: 100%;
                 }
