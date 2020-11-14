@@ -142,8 +142,16 @@
   font-size: 0.889rem;
 }
 
+.nav__list__level {
+  position: relative;
+}
+
 .nav__list__level__one {
   width: 100%;
+}
+
+.nav__list__level__one__item:hover {
+  color: #1919FF;
 }
 
 .nav__list__level:hover > .nav__list__level__two,
@@ -157,7 +165,7 @@
 
 .nav__list__level__two {
   padding: .5rem 0;
-  max-width: 18rem;
+  min-width: 18rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,6 +209,11 @@
   font-weight: 700;
   -webkit-transition: background-color .3s ease, color .3s ease;
   transition: background-color .3s ease, color .3s ease;
+}
+
+.nav__list__level__two__list__item__link:hover {
+  color: #FFFFFF;
+  background-color: #5E5E5E;
 }
 
 .nav__list__level + .nav__list__level {
