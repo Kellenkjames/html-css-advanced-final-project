@@ -1,24 +1,18 @@
 // Carousel - Override Bootstrap Styles
 
-.carousel.wrapper {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  z-index: -2;
+.carousel-inner {
+  z-index: -1;
 }
 
-.carousel.wrapper .carousel-item {
-  filter: brightness(0.5);
+.carousel-item {
+  filter: brightness(0.6);
 }
 
-.carousel.wrapper .carousel-indicators {
+.carousel-indicators {
   top: 95%;
 }
 
-.carousel.wrapper .carousel-caption h5,
-.carousel.wrapper .carousel-caption p {
+.carousel-caption h5,
+.carousel-caption p {
   color: $color-white;
-}
-
-.carousel-inner {
-  z-index: -1;
 }
