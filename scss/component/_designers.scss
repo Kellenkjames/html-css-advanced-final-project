@@ -12,11 +12,12 @@
         min-width: 7rem;
         border-radius: 50%;
         cursor: pointer;
-        border: 1px dashed $color-black;
-        transition: transform .3s ease, letter-spacing .3s ease;
+        border: 2px dashed $color-black;
+        transition: margin-top .3s ease-out, letter-spacing .3s ease;
+        
         
         &:hover {
-            transform: translateY(-25%);
+            margin-top: -2rem;
             letter-spacing: .2rem;
         }
 

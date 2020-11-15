@@ -398,16 +398,13 @@
   min-width: 7rem;
   border-radius: 50%;
   cursor: pointer;
-  border: 1px dashed #000000;
-  -webkit-transition: letter-spacing .3s ease, -webkit-transform .3s ease;
-  transition: letter-spacing .3s ease, -webkit-transform .3s ease;
-  transition: transform .3s ease, letter-spacing .3s ease;
-  transition: transform .3s ease, letter-spacing .3s ease, -webkit-transform .3s ease;
+  border: 2px dashed #000000;
+  -webkit-transition: margin-top .3s ease-out, letter-spacing .3s ease;
+  transition: margin-top .3s ease-out, letter-spacing .3s ease;
 }
 
 .designers__list:hover {
-  -webkit-transform: translateY(-25%);
-          transform: translateY(-25%);
+  margin-top: -2rem;
   letter-spacing: .2rem;
 }
 
@@ -497,7 +494,15 @@
 }
 
 .carousel-indicators {
-  top: 95%;
+  top: 88%;
+}
+
+.carousel-control-prev {
+  display: none;
+}
+
+.carousel-control-next {
+  display: none;
 }
 
 .carousel-caption h5,

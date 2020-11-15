@@ -2,7 +2,7 @@ import { cartInit } from './cart.js'
 
 /* LAX JS */
 window.onload = function () {
-  cartInit();
+  cartInit(); 
   lax.setup() // init
 
   const updateLax = () => {
